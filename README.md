@@ -1,5 +1,7 @@
 # Minimal reproduction for [webpack-dev-server#1726](https://github.com/webpack/webpack-dev-server/issues/1726)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joelmukuthu/webpack-dev-server-public-bug.svg)](https://greenkeeper.io/)
+
 ## How to reproduce
 
 1. Install docker and docker-compose if you haven't already
