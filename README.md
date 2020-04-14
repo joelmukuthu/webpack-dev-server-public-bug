@@ -1,4 +1,4 @@
-# Minimal reproduction for [webpack-dev-server$1726](https://github.com/webpack/webpack-dev-server/issues/1726)
+# Minimal reproduction for [webpack-dev-server#1726](https://github.com/webpack/webpack-dev-server/issues/1726)
 
 ## How to reproduce
 
@@ -8,9 +8,12 @@
 4. Run `docker-compose up` to run the app in docker
 5. Once running, navigate to [http://0.0.0.0:12345](http://0.0.0.0:12345) on a
    browser. You'll see "hello" on the page.
-6. On the browser, open the console. You'll see "GET
-   http://0.0.0.0:8000/sockjs-node/info?t=<some number>
-   net::ERR_CONNECTION_REFUSED" errors being printed.
+6. On the browser, open the console. You'll see these kind of errors being
+   printed
+
+   ```
+   GET http://0.0.0.0:8000/sockjs-node/info?t=<some number>net::ERR_CONNECTION_REFUSED
+   ```
 
 ## The bug
 
